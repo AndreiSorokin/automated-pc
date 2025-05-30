@@ -1,5 +1,4 @@
-'use client'
-
+import Landing from '@/pages/Landing';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -13,9 +12,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
-      <h1>Microservice data</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </main>
+    <div>
+      <Landing/>
+    </div>
   );
 }
