@@ -1,5 +1,6 @@
-import React from 'react'
-import { useEffect, useState } from 'react';
+'use client'
+
+import React, { useEffect, useState } from 'react'
 
 
 const Landing = () => {
@@ -13,7 +14,7 @@ const Landing = () => {
      }, []);
   return (
     <div>
-      123
+      {data || "No data found"}
     </div>
   )
 }
